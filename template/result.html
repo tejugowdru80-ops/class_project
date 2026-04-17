@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Search Result</h1>
+
+{% if info %}
+    <h2>{{ disease }}</h2>
+    <p><b>Description:</b> {{ info }}</p>
+    <p><b>Symptoms:</b> {{ Not available }}</p>
+    <p><b>Treatment:</b> {{ Not available }}</p>
+{% else %}
+    <p>No information found for "{{ disease }}"</p>
+{% endif %}
+
+<a href="/">Go Back</a>
+
+</body>
+</html>
